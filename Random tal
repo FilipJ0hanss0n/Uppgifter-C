@@ -1,0 +1,24 @@
+using System;
+
+namespace C
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random Random = new Random();
+            int num = Random.Next(1, 101);
+            bool loop = true;
+            Console.WriteLine("Gissa ett tal mellan 1 och 100");
+            while (loop == true) {
+                int g = Convert.ToInt32(Console.ReadLine());
+                if (g == num)
+                {
+                    Console.WriteLine("Rätt");
+                }
+
+            }
+        }
+    }
+}
+
